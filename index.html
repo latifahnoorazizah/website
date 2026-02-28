@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Latifah Noor Azizah</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background: linear-gradient(135deg,#ffd6e8,#d6f5ff,#fff6c9);
+      color:#333;
+    }
+
+    section{
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    h1,h2{
+      margin-bottom:20px;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .hero h1{
+      font-size:42px;
+    }
+
+    .btn{
+      margin-top:20px;
+      padding:12px 25px;
+      background:#ff7ab6;
+      color:white;
+      border:none;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:bold;
+      transition:.2s;
+    }
+
+    .btn:hover{
+      transform:scale(1.07);
+    }
+
+    /* CARD */
+    .card{
+      background:white;
+      max-width:720px;
+      margin:18px auto;
+      padding:24px;
+      border-radius:16px;
+      box-shadow:0 6px 16px rgba(0,0,0,.1);
+      text-align:left;
+      transition:.2s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    /* PORTFOLIO */
+    .portfolio{
+      background:#ffeef5;
+    }
+
+    /* CONTACT */
+    .contact{
+      background: linear-gradient(135deg,#ffd6e8,#d6f5ff);
+    }
+
+    .contact-list{
+      margin-top:20px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:center;
+    }
+
+    .contact-list a{
+      text-decoration:none;
+      background:white;
+      padding:12px 25px;
+      border-radius:12px;
+      width:260px;
+      color:#333;
+      font-weight:600;
+      box-shadow:0 4px 10px rgba(0,0,0,.1);
+      transition:.2s;
+    }
+
+    .contact-list a:hover{
+      transform:scale(1.05);
+    }
+
+    footer{
+      padding:20px;
+      font-size:14px;
+      opacity:.7;
+    }
+
+    /* ANIMASI SCROLL */
+    .reveal{
+      opacity:0;
+      transform:translateY(60px);
+      transition:all .8s ease;
+    }
+
+    .reveal.active{
+      opacity:1;
+      transform:translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero reveal">
+    <h1>Halo, Saya Latifah Noor Azizah</h1>
+    <p>Mahasiswa Sistem Informasi yang berfokus pada pengembangan software dan teknologi.</p>
+    <button class="btn" onclick="scrollToPortfolio()">Lihat Portofolio</button>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="reveal">
+    <h2>Tentang Saya</h2>
+    <div class="card">
+      <p>
+        Saya memiliki minat pada pengembangan perangkat lunak, pembuatan website,
+        serta pemecahan masalah berbasis teknologi. Terbiasa menggunakan HTML, CSS,
+        JavaScript, dan Python dalam membangun aplikasi dan sistem sederhana.
+        Saya senang belajar mandiri, mencoba proyek nyata, dan terus meningkatkan
+        kemampuan teknis secara konsisten.
+      </p>
+    </div>
+  </section>
+
+  <!-- CITA CITA -->
+  <section class="reveal">
+    <h2>Cita-cita & Prinsip</h2>
+    <div class="card">
+      <p>
+        Saya bercita-cita berkarier sebagai Game Developer, Data Analyst, atau Cyber Security Engineer.
+        Saya ingin membangun aplikasi interaktif, mengolah data menjadi informasi yang bermanfaat,
+        serta menjaga keamanan sistem dari ancaman digital dengan solusi yang efektif dan berdampak.
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTOFOLIO -->
+  <section id="portfolio" class="portfolio reveal">
+    <h2>Portofolio</h2>
+
+    <div class="card">
+      <h3>Program CRUD Mahasiswa</h3>
+      <p>Aplikasi tambah, ubah, hapus, dan pencarian data mahasiswa berbasis database.</p>
+    </div>
+
+    <div class="card">
+      <h3>Laporan Penjualan Harian</h3>
+      <p>Sistem pencatatan transaksi dan rekap otomatis total penjualan harian.</p>
+    </div>
+
+    <div class="card">
+      <h3>Kalkulator Sederhana</h3>
+      <p>Kalkulator web untuk operasi matematika dasar dengan tampilan ringan.</p>
+    </div>
+
+    <div class="card">
+      <h3>ATM Python Sederhana</h3>
+      <p>Simulasi mesin ATM terminal dengan fitur saldo, setor, dan tarik tunai.</p>
+    </div>
+
+    <div class="card">
+      <h3>Robot Pendeteksi Banjir</h3>
+      <p>Robot sensor air untuk mendeteksi ketinggian air dan memberikan peringatan dini.</p>
+    </div>
+
+    <div class="card">
+      <h3>Website Hotelku</h3>
+      <p>Bertanggung jawab pada fitur rating dan ulasan pelanggan.</p>
+    </div>
+
+    <div class="card">
+      <h3>Sistem Informasi Akademik</h3>
+      <p>Website pengelolaan nilai, jadwal, dan data mahasiswa dengan fitur login.</p>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="contact reveal">
+    <h2>Kontak</h2>
+    <p>Hubungi saya untuk kerja sama atau diskusi proyek.</p>
+
+    <div class="contact-list">
+      <a href="https://instagram.com/latifahnoorazizah" target="_blank">Instagram</a>
+      <a href="mailto:latifahnoorazizah7@gmail.com">Email</a>
+      <a href="https://tiktok.com/@mieayamgapakesayur1" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Aza. Dibuat pakai HTML, CSS, JS, dan sedikit rasa tanggung jawab.
+  </footer>
+
+  <script>
+    function scrollToPortfolio(){
+      document.getElementById("portfolio").scrollIntoView({behavior:"smooth"});
+    }
+
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll(){
+      reveals.forEach(el=>{
+        const top = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if(top < windowHeight - 100){
+          el.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+
+</body>
+</html>
